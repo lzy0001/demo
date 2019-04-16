@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+
+        }
+        td {
+            color: #666;
+            text-align: center;
+            font-size: 16px;
+        }
+        thead tr{
+            background-color: aquamarine;
+            
+        }
+        tbody tr:nth-child(odd) {
+            background-color: red;
+        }
+        tbody tr:nth-child(even) {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>请输入姓名：<input type="text"></p>
+        <p>请输入邮箱：<input type="text"></p>
+        <p>请输入手机：<input type="text"></p>
+        <p>请输入地址：<input type="text"></p>
+    </div>
+    <button>添加</button>
+    <table>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>邮箱</th>
+                <th>手机</th>
+                <th>地址</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>小黑</td>
+                <td>xiaohei@126.com</td>
+                <td>19999009090</td>
+                <td>北京</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <script src="index.js"></script>
+</body>
+
+</html>
